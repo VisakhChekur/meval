@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"guacs"
+	],
+	"copyright": "Copyright © 2023, guacs",
+	"description": "An application to evaluate simple mathematical expressions provided as a string.",
+	"license": "MIT",
+	"name": "meval"
+}

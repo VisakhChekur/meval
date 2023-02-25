@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/meval
+meval.so
+meval.dylib
+meval.dll
+meval.a
+meval.lib
+meval-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
