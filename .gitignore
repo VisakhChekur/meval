@@ -1,3 +1,7 @@
+# Custom
+.vscode/
+
+# D Related stuff
 .dub
 docs.json
 __dummy.html
@@ -9,6 +13,7 @@ meval.dll
 meval.a
 meval.lib
 meval-test-*
+*.a
 *.exe
 *.pdb
 *.o

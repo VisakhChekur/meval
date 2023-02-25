@@ -1,0 +1,3 @@
+struct Parser {
+    int x;
+}
