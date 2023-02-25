@@ -225,4 +225,8 @@ unittest {
     string expression = "1 + 4.3 % 4";
     auto tokenizer = new Tokenizer(expression);
     assertThrown!InvalidCharacter(tokenizer.tokenize(), "Failed on invalid expression");
+
+    expression = "1 + 4.3. / 4";
+    tokenizer = new Tokenizer(expression);
+    assertThrown!InvalidCharacter(tokenizer.tokenize(), "Failed on invalid expression");
 }
