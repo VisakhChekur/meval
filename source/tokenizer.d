@@ -1,9 +1,10 @@
 module tokenizer;
-import enums : TokenType;
+import enums : TokenType, LogLevel;
 import exceptions;
 import std.ascii : isDigit;
 import std.conv;
 import std.stdio : writeln;
+import std.format : format;
 
 version (unittest) {
     import std.exception;
@@ -17,7 +18,7 @@ const struct Token {
 
 /** Handles the tokenization of the expression.
 */
-struct Tokenizer {
+class Tokenizer {
 
     private Token[] tokens = new Token[0];
     private int colNum = 0;
@@ -29,6 +30,9 @@ struct Tokenizer {
     this(string expression) {
         this.expression = expression;
 
+    }
+
+    this() {
     }
 
     /** Tokenizes the given expression. */
@@ -50,6 +54,7 @@ struct Tokenizer {
                 advance();
             }
         }
+
         return tokens;
     }
 

@@ -15,3 +15,18 @@ enum TokenType : char {
     MULTIPLY = '*',
     POWER = '^',
 }
+
+enum Operators {
+    ADD,
+    SUBTRACT,
+    DIVIDE,
+    MULTIPLY,
+    POWER
+}
+
+enum LogLevel {
+    TRACE = 0,
+    DEBUG = 1,
+    INFO = 2,
+    ERROR = 3,
+}

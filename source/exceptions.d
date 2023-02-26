@@ -12,3 +12,10 @@ class InvalidCharacter : Exception {
         super(errorMsg, file, line);
     }
 }
+
+class DivideByZero : Exception {
+
+    this() {
+        super("Tried to divide by 0!");
+    }
+}
